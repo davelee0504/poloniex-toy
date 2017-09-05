@@ -12,6 +12,7 @@
   "dependencies": {
     "config": "^1.26.2",
     "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
     "poloniex.js": "^0.0.7"
   },
   "devDependencies": {
