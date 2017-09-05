@@ -5,7 +5,8 @@
   "author": "Wayne <wayne.5540@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "node index.js"
+    "start": "node index.js",
+    "build": "babel src -d build"
   },
   "dependencies": {
     "koa": "^2.3.0"

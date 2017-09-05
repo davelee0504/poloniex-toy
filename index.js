@@ -1,9 +1,14 @@
-const Koa = require('koa');
-const app = new Koa();
+'use strict';
 
-// response
-app.use(ctx => {
-  ctx.body = 'Hello Koa';
-});
+const env = process.env.NODE_ENV || 'development';
+const port = process.env.PORT || 3000;
+const src = env === 'production' ? './build/app' : './src/app';
 
-app.listen(3000);
+require('babel-polyfill');
+if (env === 'development') {
+  // for development use babel/register for faster runtime compilation
+  require('babel-register');
+}
+
+const app = require(src).default;
+app.listen(port);
