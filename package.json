@@ -4,10 +4,14 @@
   "main": "index.js",
   "author": "Wayne <wayne.5540@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node index.js"
+  },
   "dependencies": {
     "koa": "^2.3.0"
   },
-  "scripts": {
-    "dev": "node index.js"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
   }
 }
