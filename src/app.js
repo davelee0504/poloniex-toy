@@ -4,10 +4,6 @@ import bodyParser from 'koa-bodyparser';
 import cors from 'kcors';
 
 
-import Poloniex from 'poloniex.js';
-
-const poloniex = new Poloniex();
-
 const app = new Koa()
   .use(cors())
   .use(bodyParser())

@@ -1,3 +1,4 @@
 node_modules/
 build/
 config/production.json
+yarn-error.log

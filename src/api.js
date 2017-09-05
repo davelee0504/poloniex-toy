@@ -1,5 +1,7 @@
 import KoaRouter from 'koa-router';
+import Poloniex from 'poloniex-api-node';
 
+const poloniex = new Poloniex();
 const api = KoaRouter();
 
 api.get('/hello/:name',
@@ -10,6 +12,15 @@ api.get('/hello/:name',
 
     ctx.body = {
       hello: name,
+    };
+  });
+
+api.get('/poloniex',
+  async (ctx, next) => {
+    let data = await poloniex.returnTicker()
+
+    ctx.body = {
+      data: data
     };
   });
 
