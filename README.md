@@ -1,13 +1,14 @@
 # Poloniex Toy
 
+Poloniex API proxy using KoaJS
 
 ## Getting started
 
-### Start server
+### Start server (development)
 
 ```sh
 yarn install
-yarn run start
+yarn run dev
 ```
 Go to `http://localhost:3000/`
 
