@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "config": "^1.26.2",
-    "koa": "^2.3.0"
+    "koa": "^2.3.0",
+    "poloniex.js": "^0.0.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
